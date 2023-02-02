@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Grid2 </title>
+    <style>
+        .container {
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+            /* padding: 5px;
+            margin: 5px auto; */
+            grid-gap: 3px;
+        }
+        .container > div {
+            border: 1px solid black;
+            padding: 10px;
+            /* margin: 10px; */
+            grid-gap: 3px;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #a7ffeb;
+        
+
+            
+        }
+        .grid1 {
+            grid-column: 1/5;
+            background-color: #a7ffeb;
+        }
+        .grid2 {
+            grid-row: 2/5;
+        }
+        .grid3 {
+            grid-column: 2/5;
+            height: 200px;
+        }
+        .grid7 {
+            grid-column: 2/5;
+            height: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="grid1"> Navbar </div>
+        <div class="grid2" style="background-color: #58f7d2;"> Sidebar </div>
+        <div class="grid3"> Main </div>
+        <div class="grid4" style="height: 100px;"> Content1 </div>
+        <div class="grid5"> Content2 </div>
+        <div class="grid6"> Content3 </div>
+        <div class="grid7" style="background-color: #58f7d2;"> Footer </div>
+
+    </div>
+</body>
+</html>

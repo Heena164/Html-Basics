@@ -1,0 +1,60 @@
+<html>
+    <head> 
+        <title> CSS Position </title>
+        <style>
+            .container {
+                border: 2px solid black;
+                background-color: rgb(200, 238, 238);
+                height: 34442px;
+                width: 45663px;
+            }
+            .static {
+                position: static;
+                width: 250px;
+                height: 100px;
+                border:3px solid rgb(93, 200, 204);
+            }
+            .relative {
+                position: relative;
+                width: 250px;
+                height: 100px;
+                border:3px solid rgb(228, 176, 63);
+            }
+            .absolute {
+                position: absolute;
+                width: 250px;
+                height: 100px;
+                left: 20px;
+                top: 50px;
+                border:3px solid greenyellow;
+            }
+            .fixed {
+                position: fixed;
+                top: 10px;
+                right: 0;
+                width: 250px;
+                height: 100px;
+                border:3px solid rgb(238, 83, 173);
+            }
+            .sticky {
+                position: sticky;
+                top: 0;
+                width: 300px;
+                height: 20px;
+                border:3px solid rgb(233, 134, 109);
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+        <div class="static"> This elements has position static </div>
+        <div class="relative"> This elements has position relative </div>
+        <div class="absolute"> This elements has position absolute </div>
+        <div class="fixed"> This elements has position fixed </div> <br> <br> 
+        <div class="sticky"> This elements has position sticky </div>
+    </div>
+            
+    </body>
+</html>
